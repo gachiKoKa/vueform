@@ -1,0 +1,15 @@
+login:
+  path: '/login'
+  defaults: { controller: 'app\controllers\LoginController::login' }
+
+register:
+  path: '/register'
+  defaults: { controller: 'app\controllers\LoginController::register' }
+
+register_page:
+  path: '/register_page'
+  defaults: { controller: 'app\controllers\LoginController::indexRegister' }
+
+welcome_page_route:
+  path: '/'
+  defaults: { controller: 'app\controllers\LoginController::index' }

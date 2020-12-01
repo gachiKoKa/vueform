@@ -1,0 +1,19 @@
+{
+  "require": {
+    "symfony/routing": "^5.1",
+    "symfony/http-foundation": "^5.1",
+    "symfony/config": "^5.1",
+    "symfony/http-kernel": "^5.1",
+    "symfony/yaml": "^5.1",
+    "vlucas/phpdotenv": "^5.2",
+    "ext-json": "*",
+    "ext-pdo": "*",
+    "ext-curl": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "app\\controllers\\": "controllers/",
+      "app\\services\\": "services/"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<div id="register_form">
+    <div v-if="errors.length">
+        <ol>
+            <li v-for="error in errors">{{ error }}</li>
+        </ol>
+    </div>
+    <form v-on:submit.prevent="submitRegisterForm">
+        <label for="login">Login</label>
+        <input v-model="login" placeholder="Enter login" id="login">
+        <label for="Email">Email</label>
+        <input v-model="email" placeholder="Enter email" id="email">
+        <label for="password">Password</label>
+        <input v-model="password" placeholder="Enter password" id="password">
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</body>
+<script src="registerForm.js"></script>
+<style>
+    body {
+        text-align: center;
+    }
+    form {
+        display: inline-block;
+    }
+</style>
+</html>
